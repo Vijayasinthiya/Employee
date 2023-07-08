@@ -84,5 +84,9 @@ public class EmployeeController {
 	public List<Employee> getByGender(@PathVariable String gender) throws GenderException, Exception {
 		return empSer.getByGender(gender);
 	}
+	@GetMapping(value = "/getBySalary1/{a}")
+	public List<Employee> getBySalary1(@PathVariable int a)  {
+		return empSer.getBySalary1(a);
+	}
 
 }

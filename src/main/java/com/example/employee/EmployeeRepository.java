@@ -13,6 +13,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	public List<Employee> getByname(String name);
 	@Query(value = "select * from Employee where gender like ?", nativeQuery = true)
 	public List<Employee> getByGenderDetail(String gender);
-
+	@Query(value = "select * from Employee where salary like ?", nativeQuery = true)
+	public List<Employee> getBySalary1(int a);
 
 }

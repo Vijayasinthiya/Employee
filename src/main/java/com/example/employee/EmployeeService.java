@@ -93,4 +93,7 @@ public class EmployeeService {
 			return empDao.getByGender(gender);
 		}
 	}
+	public List<Employee> getBySalary1( int a)  {
+		return empDao.getBySalary1(a);
+	}
 }

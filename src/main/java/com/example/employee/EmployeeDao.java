@@ -55,5 +55,8 @@ public class EmployeeDao {
 	public List<Employee> getByGender(String gender) throws GenderException, Exception {
 		return empRep.getByGenderDetail(gender);
 	}
+	public List<Employee> getBySalary1( int a)  {
+		return empRep.getBySalary1(a);
+	}
 
 }
