@@ -17,7 +17,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empSer;
 
-//	@PostMapping(value = "/insert")
+//	@PostMapping(value = "/insertAll1")
 //	public String addEmployee(@RequestBody Employee e) {
 //		return empSer.addEmployee(e);
 //	}
